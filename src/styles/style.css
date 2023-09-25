@@ -1,17 +1,13 @@
-/*Basic styles*/
-
-/* 1 fonts */
+/* fonts */
 
 @font-face {
-    font-weight: normal;
-    font-family: 'Open Sans';
-    src: url(./assets/fonts/Open\ Sans/static/OpenSans/OpenSans-Regular.ttf);
+  font-family: 'Open Sans';
+  src: url(./assets/fonts/Open\ Sans/static/OpenSans/OpenSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: Neucha;
-    src: url(./assets/fonts/Neucha/Neucha-Regular.ttf);
-    
+  font-family: Neucha;
+  src: url(./assets/fonts/Neucha/Neucha-Regular.ttf);
 }
 
 body {
@@ -19,21 +15,44 @@ body {
   line-height: 1.6em;
   color: #2a2626;
 }
-/* 2 headings */
-.h1 {
+
+.neucha {
+  font-family: Neucha, cursive;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+/* colors */
+.primary {
+  color: #fe8a02;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.primary-background {
+  background-color: #fe8a02;
+}
+/* headings */
+
+h1 {
   line-height: 1.2em;
   font-size: 72px;
 }
 
-.h2 {
+h2 {
   line-height: 1.2em;
   font-size: 60px;
 }
 
-.h3 {
+h3 {
   line-height: 1.2em;
   font-size: 34px;
 }
+
+/* sections */
 
 body {
   display: flex;
@@ -41,5 +60,37 @@ body {
   align-items: center;
 
   margin: 100px auto;
+
   max-width: 1110px;
+}
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+background-img::before {
+  display: block;
+  width: 1140px;
+  height: 795px;
+
+  position: absolute;
+  z-index: -2;
+
+  content: "";
+  background-image: url("/src/assets/images/background.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 6%;
+}
+
+.headImg-header {
+  width: 800px;
+}
+
+img[alt="main logo"] {
+  position: absolute;
+  top: -13px;
+  left: 275px;
+  z-index: 0;
 }
