@@ -24,14 +24,33 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* colors */
-
+/* font-colors */
 .primary {
   color: #fe8a02;
 }
 
 .white {
-  color: #ffffff;
+  color: #fff;
+}
+
+.dark {
+  color: #2a2626;
+}
+
+.primary-dark {
+  color: #42413c;
+}
+
+.dark50 {
+  color: #908d8b;
+}
+
+.brown {
+  color: #b09a81;
+}
+
+.white50 {
+  color: #d7ccc0;
 }
 
 /* background colors */
