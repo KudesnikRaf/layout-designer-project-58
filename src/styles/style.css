@@ -1,8 +1,15 @@
 /* fonts */
 
 @font-face {
+  font-weight: normal;
   font-family: 'Open Sans';
   src: url(./assets/fonts/Open\ Sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Open Sans';
+  src: url(./assets/fonts/Open\ Sans/static/OpenSans/OpenSans-Bold.ttf);
 }
 
 @font-face {
@@ -59,9 +66,14 @@ body {
   background-color: #fe8a02;
 }
 
+.light-background {
+  background-color: #f5f4f0;
+}
+
 /* headings */
 
 h1 {
+  font-weight: normal;
   line-height: 1.2em;
   font-size: 72px;
 }
@@ -89,48 +101,7 @@ body {
   max-width: 1110px;
 }
 
-.cogn-header {
-  display: inline-block;
-  width: 376px;
-}
-
-.header {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.background-img::before {
-  display: block;
-  width: 1140px;
-  height: 795px;
-
-  position: absolute;
-
-  content: "";
-  background-image: url("/src/assets/images/background.png"); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 6%;
-}
-
-.headImg {
-  position: relative;
-  display: flex;
-}
-
-.headImg-header {
-  width: 800px;
-}
-
-img[alt="main logo"] {
-  position: absolute;
-  top: -10px;
-  left: 295px;
-  z-index: 0;
-
-  width: 1082.8125px;
-  height: 525px;
-}
+/* style for text */
 
 .text-box {
   width: 540px;
@@ -145,3 +116,72 @@ img[alt="main logo"] {
   display: inline-block;
   margin-top: 15px;
 }
+
+/* conteiner */
+
+.header {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.background-img::before {
+  display: block;
+  width: 1440px;
+  height: 914px;
+
+  position: absolute;
+
+  background-image: url("/src/assets/images/background.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 6%;
+  
+  content: "";
+}
+
+.cogn-header {
+  display: inline-block;
+  width: 376px;
+}
+
+/* head img */
+
+.headImg {
+  position: relative;
+  display: flex;
+}
+
+.headImg-header {
+  width: 800px;
+}
+
+img[alt="main logo"] {
+  position: absolute;
+  top: -13px;
+  left: 275px;
+  z-index: 0;
+}
+
+/* button */
+
+.more-details {
+  position: relative;
+  left: 50%;
+
+  margin: 24px 12px;
+  padding: 0;
+  border: none;
+
+  width: 149px;
+  height: 48px;
+
+  font-weight: bold;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.more-details:hover {
+  background-color: #ea7600;
+}
+
