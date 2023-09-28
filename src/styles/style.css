@@ -74,18 +74,18 @@ body {
 
 h1 {
   font-weight: normal;
-  line-height: 1.2em;
   font-size: 72px;
+  line-height: 1.2em;
 }
 
 h2 {
-  line-height: 1.2em;
   font-size: 60px;
+  line-height: 1.2em;
 }
 
 h3 {
-  line-height: 1.2em;
   font-size: 34px;
+  line-height: 1.2em;
 }
 
 /* sections */
@@ -96,15 +96,34 @@ body {
   justify-content: center;
   align-items: center;
 
-  margin: 100px auto;
+  overflow: hidden;
 
-  max-width: 1110px;
+  margin: 100px auto;
+  color: #2a2626;
+
+  font-size: 16px;
+  line-height: 1.6em;
 }
 
 /* style for text */
 
-.text-box {
+.text-box1 {
   width: 540px;
+
+  margin: 0 15px 0 0;
+}
+
+.text-box2 {
+  width: 540px;
+  margin: 0 0 0 15px;
+
+}
+
+.text-box-header {
+  position: relative;
+  bottom: 13px;
+
+  margin-top: 14%;
 }
 
 .text-between {
@@ -120,8 +139,27 @@ body {
 /* conteiner */
 
 .header {
+  height: 914px;
+}
+
+.width-100percent {
+  width: 100%;
+}
+
+.flex-jc-center {
+  justify-content: center;
+}
+
+.flex {
   display: flex;
-  flex-flow: column wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.width-1110px {
+  width: 1110px;
 }
 
 .background-img::before {
@@ -144,6 +182,10 @@ body {
   width: 376px;
 }
 
+.header-content-container {
+  position: relative;
+  top: 7%;
+}
 /* head img */
 
 .headImg {
@@ -155,12 +197,22 @@ body {
   width: 800px;
 }
 
+.headANDimg-header > h1 {
+  position: relative;
+  bottom: 10px;
+  z-index: 1;
+}
+
 img[alt="main logo"] {
   position: absolute;
-  top: -13px;
-  left: 275px;
+  top: -10px;
+  left: 295px;
   z-index: 0;
+
+  width: 1082.8125px;
+  height: 525px;
 }
+
 
 /* button */
 
@@ -185,3 +237,6 @@ img[alt="main logo"] {
   background-color: #ea7600;
 }
 
+#navigation {
+  height: 991px;
+}
