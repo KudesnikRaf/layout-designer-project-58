@@ -3,24 +3,18 @@
 @font-face {
   font-weight: normal;
   font-family: 'Open Sans';
-  src: url(./assets/fonts/Open\ Sans/static/OpenSans/OpenSans-Regular.ttf);
+  src: url(../assets/fonts/Open\ Sans/static/OpenSans/OpenSans-Regular.ttf);
 }
 
 @font-face {
   font-weight: bold;
   font-family: 'Open Sans';
-  src: url(./assets/fonts/Open\ Sans/static/OpenSans/OpenSans-Bold.ttf);
+  src: url(../assets/fonts/Open\ Sans/static/OpenSans/OpenSans-Bold.ttf);
 }
 
 @font-face {
   font-family: Neucha;
-  src: url(./assets/fonts/Neucha/Neucha-Regular.ttf);
-}
-
-body {
-  font-size: 16px;
-  line-height: 1.6em;
-  color: #2a2626;
+  src: url(../assets/fonts/Neucha/Neucha-Regular.ttf);
 }
 
 .neucha {
@@ -31,7 +25,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* font-colors */
+/* 1.2) colors */
+
+/* 1.2.1) font-colors */
 .primary {
   color: #fe8a02;
 }
@@ -60,17 +56,29 @@ body {
   color: #d7ccc0;
 }
 
-/* background colors */
-
-.primary-background {
-  background-color: #fe8a02;
-}
+/* 1.2.2) background-colors */
 
 .light-background {
   background-color: #f5f4f0;
 }
 
-/* headings */
+.primary-background {
+  background-color: #fe8a02;
+}
+
+.primary-dark-background {
+  background-color: #42413c;
+}
+
+.brown-background {
+  background-color: #b09a81;
+}
+
+.white-background {
+  background-color: #fff;
+}
+
+/* 1.3) headings */
 
 h1 {
   font-weight: normal;
@@ -79,56 +87,79 @@ h1 {
 }
 
 h2 {
+  margin: 0;
+
+  color: #fe8a02;
+
+  font-weight: normal;
   font-size: 60px;
+  font-family: Neucha, cursive;
   line-height: 1.2em;
 }
 
 h3 {
+  font-weight: normal;
   font-size: 34px;
   line-height: 1.2em;
 }
 
-/* sections */
+/* 1.4) sections */
 
 body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
-
-  overflow: hidden;
 
   margin: 100px auto;
+
+  overflow-x: hidden;
+
   color: #2a2626;
 
   font-size: 16px;
   line-height: 1.6em;
 }
 
-/* style for text */
-
-.text-box1 {
-  width: 540px;
-
-  margin: 0 15px 0 0;
+header {
+  height: 914px;
 }
 
-.text-box2 {
-  width: 540px;
-  margin: 0 0 0 15px;
+/* flexbox */
 
-}
-
-.text-box-header {
-  position: relative;
-  bottom: 13px;
-
-  margin-top: 14%;
-}
-
-.text-between {
+.flex {
   display: flex;
-  flex-flow: row nowrap;
+}
+
+.flex-flow-rw {
+  flex-flow: row wrap;
+}
+
+.flex-flow-cn {
+  flex-flow: column nowrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-jc-center {
+  justify-content: center;
+}
+
+/* width */
+
+.w-1110px {
+  width: 1110px;
+}
+
+.w-100percent {
+  width: 100%;
+}
+
+/* margin */
+
+.no-margin {
+  margin: 0;
 }
 
 .inline-block-margin-top {
@@ -136,71 +167,64 @@ body {
   margin-top: 15px;
 }
 
-/* conteiner */
+/* text */
 
-.header {
-  height: 914px;
+.doubled-text {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-.w-100percent {
-  width: 100%;
+.text-box-1 {
+  width: 540px;
+  margin: 0 15px 0 0;
 }
 
-.flex-jc-center {
-  justify-content: center;
+.text-box-2 {
+  width: 540px;
+  margin: 0 0 0 15px;
 }
 
-.flex {
+.headANDimg {
+  position: relative;
+
   display: flex;
 }
 
-.flex-column {
-  flex-direction: column;
-}
-
-.width-1110px {
-  width: 1110px;
-}
-
 .background-img::before {
+  position: absolute;
+
   display: block;
   width: 1440px;
   height: 914px;
 
-  position: absolute;
-
-  background-image: url("/src/assets/images/background.png"); 
+  background-image: url("../assets/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 6%;
-  
+
   content: "";
 }
 
-.cogn-header {
-  display: inline-block;
-  width: 376px;
-}
+/* headAndimg */
 
-.header-content-container {
+.header-cc {
   position: relative;
   top: 7%;
-}
-/* head img */
-
-.headImg {
-  position: relative;
-  display: flex;
 }
 
 .headImg-header {
   width: 800px;
 }
 
-.headANDimg-header > h1 {
+.headImg-header > h1 {
   position: relative;
   bottom: 10px;
   z-index: 1;
+}
+
+.cogn-header {
+  display: inline-block;
+  width: 376px;
 }
 
 img[alt="main logo"] {
@@ -213,6 +237,14 @@ img[alt="main logo"] {
   height: 525px;
 }
 
+/* text */
+
+.doubled-text-header {
+  position: relative;
+  bottom: 13px;
+
+  margin-top: 14%;
+}
 
 /* button */
 
@@ -220,15 +252,16 @@ img[alt="main logo"] {
   position: relative;
   left: 50%;
 
-  margin: 24px 12px;
-  padding: 0;
-  border: none;
-
   width: 149px;
   height: 48px;
 
+  margin: 24px 12px;
+  padding: 0;
+
   font-weight: bold;
   font-size: 16px;
+
+  border: none;
 
   cursor: pointer;
 }
