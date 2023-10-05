@@ -367,7 +367,7 @@ img[alt="main logo"] {
   background-color: #fe8a02;
 }
 
-nav-box-item > h2 {
+.nav-box-item > h2 {
   position: relative;
   top: 24px;
   left: 24px;
@@ -375,6 +375,14 @@ nav-box-item > h2 {
   margin: 0;
 
   font-size: 64px;
+}
+
+.nav-box-item > h3 {
+  position: relative;
+  top: 35px;
+  left: 24px;
+
+  margin: 0;
 }
 
 .nav-box-item > p {
@@ -387,18 +395,10 @@ nav-box-item > h2 {
   margin: 0;
 }
 
-.nav-item-box > h3 {
-  position: relative;
-  top: 35px;
-  left: 24px;
-
-  margin: 0;
-}
-
-.nav-item-box:hover > p {
+.nav-box-item:hover > p {
   color: #fff;
 }
 
-.nav-item-box:hover > h3 {
+.nav-box-item:hover > h3 {
   color: #fff;
 }
