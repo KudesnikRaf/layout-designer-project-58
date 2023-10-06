@@ -235,6 +235,10 @@ header {
   width: 376px;
 }
 
+.cogn-distortion {
+  font-size: 24px;
+}
+
 img[alt="main logo"] {
   position: absolute;
   top: -10px;
@@ -401,4 +405,14 @@ img[alt="main logo"] {
 
 .nav-box-item:hover > h3 {
   color: #fff;
+}
+
+.container-content-section {
+  width: 1110px;
+
+  padding: 100px 165px;
+}
+
+.distortion-container-info-light {
+  margin-left: 30px;
 }
