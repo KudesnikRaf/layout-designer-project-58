@@ -433,3 +433,7 @@ img[alt="main logo"] {
 .shadow-filter {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
+
+.order-last {
+  order: 1;
+}
