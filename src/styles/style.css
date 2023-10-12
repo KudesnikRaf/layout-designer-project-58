@@ -282,6 +282,36 @@ img[alt="main logo"] {
   background-color: #ea7600;
 }
 
+.send-icon-container {
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+
+  background-color: #fe8a02;
+
+  border: none;
+
+  cursor: pointer;
+
+  content: "";
+}
+
+.send-icon-container:hover {
+  background-color: #ea7600;
+}
+
+.send-icon-container::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  background-image: url(../assets/images/send.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: "";
+}
+
 
 .video-section {
   position: relative;
@@ -436,4 +466,64 @@ img[alt="main logo"] {
 
 .order-last {
   order: 1;
+}
+
+.footer-content-container {
+  top: 100px;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.input-container {
+  height: 190px;
+}
+
+.input-container > h3 {
+  position: relative;
+  top: 27%;
+
+  height: 80px;
+
+  margin: 0;
+  
+  font-weight: normal;
+}
+
+input[type="email"] {
+  width: 423px;
+  height: 50px;
+  padding: 0;
+
+  border: none;
+}
+
+fieldset {
+  position: relative;
+  top: 20%;
+
+  height: 120px;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: none;
+}
+
+fieldset > h4 {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  padding: 0;
+
+  font-weight: normal;
+  font-size: 18px;
+}
+
+fieldset > p {
+  margin: 0;
+
+  font-size: 12px;
 }
