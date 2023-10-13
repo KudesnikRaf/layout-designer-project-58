@@ -111,7 +111,7 @@ body {
   justify-content: center;
 
   margin: auto;
-
+  
   overflow-x: hidden;
 
   color: #2a2626;
@@ -325,7 +325,7 @@ img[alt="main logo"] {
 .video-container {
   position: relative;
   left: 95px;
-
+  
   height: 475px;
 }
 
@@ -335,7 +335,7 @@ img[alt="main logo"] {
 
   border: none;
 
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 /* Navigation section */
