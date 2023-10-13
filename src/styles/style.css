@@ -110,7 +110,7 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
 
-  margin: 100px auto;
+  margin: auto;
 
   overflow-x: hidden;
 
