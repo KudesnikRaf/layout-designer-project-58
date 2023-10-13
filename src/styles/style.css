@@ -110,6 +110,8 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
 
+  margin: 100px auto;
+
   overflow-x: hidden;
 
   color: #2a2626;
