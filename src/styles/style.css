@@ -110,7 +110,7 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
 
-  margin: 15px auto;
+  margin: 100px auto;
 
   overflow-x: hidden;
 
@@ -188,10 +188,6 @@ footer {
 
 .no-margin {
   margin: 0;
-}
-
-.top {
-  margin-top: 0px;
 }
 
 .inline-block-margin-top {
@@ -357,7 +353,7 @@ img[alt="main logo"] {
   align-content: center;
   justify-content: center;
 
-  width: 1440px;
+  width: 1110px;
   height: 891px;
 }
 
