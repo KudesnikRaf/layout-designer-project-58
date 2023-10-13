@@ -110,7 +110,7 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
 
-  margin: 100px auto;
+  margin: auto;
 
   overflow-x: hidden;
 
@@ -188,6 +188,10 @@ footer {
 
 .no-margin {
   margin: 0;
+}
+
+.top {
+  margin-top: 0px;
 }
 
 .inline-block-margin-top {
